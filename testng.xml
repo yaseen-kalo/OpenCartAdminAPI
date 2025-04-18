@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="OpenCartAdminAPI">
+    <test verbose="2" preserve-order="true" name="/Users/yaseenkalo/Documents/automationProject/OpenCartAdminAPI">
+        <classes>
+            <class name="tests.category.GetCategoryTests"/>
+        </classes>
+    </test>
+</suite>

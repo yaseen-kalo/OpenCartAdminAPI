@@ -9,20 +9,20 @@ import java.util.Properties;
 public class ConfigReader {
 
     // Reads config.properties
-    static Properties prop;
+    Properties prop;
+    String filePath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
     {
         try {
-            String filePath = System.getProperty("user.dir") + "/src/test/resources/config.properties";
-            FileInputStream fis;
-            fis = new FileInputStream(filePath);
             prop = new Properties();
+            FileInputStream fis = new FileInputStream(filePath);
             prop.load(fis);
+
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 
-    public static String getProperty(String key) {
+    public String getProperty(String key) {
         return prop.getProperty(key);
     }
 }

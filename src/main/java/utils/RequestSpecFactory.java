@@ -10,10 +10,11 @@ public class RequestSpecFactory {
     private static RequestSpecification requestSpec;
 
     public static RequestSpecification getRequestSpec() {
+        ConfigReader configReader = new ConfigReader();
         if (requestSpec == null) {
             requestSpec = new RequestSpecBuilder()
-                    .setBaseUri(ConfigReader.getProperty("baseurl"))
-                    .addHeader("Authorization", "Bearer " + TokenManager.getToken())
+                    .setBaseUri(configReader.getProperty("baseurl"))
+                    .addHeader("Authorization", TokenManager.getToken())
                     .addHeader("Content-Type", "application/json")
                     .build();
         }

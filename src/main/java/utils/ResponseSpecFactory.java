@@ -41,7 +41,7 @@ public class ResponseSpecFactory {
         if (notFoundSpec == null) {
             notFoundSpec = new ResponseSpecBuilder()
                     .expectStatusCode(404)
-                    .expectContentType("application/json")
+                    .expectContentType("text/html; charset=UTF-8")
                     .build();
         }
         return notFoundSpec;

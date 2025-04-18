@@ -1,0 +1,16 @@
+[INFO ] 2025-04-18 12:14:01.691 [main] BaseTest - 📦 Status Code: 200
+[DEBUG] 2025-04-18 12:14:01.694 [main] BaseTest - 📄 Response Body:
+io.restassured.internal.RestAssuredResponseImpl@b5c6a30
+[INFO ] 2025-04-18 12:14:01.696 [main] BaseTest - ✅ Test Passed: getAllCategories_ValidToken_ShouldReturn200
+[INFO ] 2025-04-18 12:14:02.356 [main] BaseTest - 📦 Status Code: 404
+[DEBUG] 2025-04-18 12:14:02.357 [main] BaseTest - 📄 Response Body:
+io.restassured.internal.RestAssuredResponseImpl@3caafa67
+[INFO ] 2025-04-18 12:14:02.359 [main] BaseTest - ✅ Test Passed: getAllCategories_WithoutToken_ShouldReturn401
+[INFO ] 2025-04-18 12:17:14.380 [main] BaseTest - 📦 Status Code: 200
+[DEBUG] 2025-04-18 12:17:14.382 [main] BaseTest - 📄 Response Body:
+io.restassured.internal.RestAssuredResponseImpl@ac91282
+[INFO ] 2025-04-18 12:17:14.385 [main] BaseTest - ✅ Test Passed: getAllCategories_ValidToken_ShouldReturn200
+[INFO ] 2025-04-18 12:17:14.969 [main] BaseTest - 📦 Status Code: 404
+[DEBUG] 2025-04-18 12:17:14.969 [main] BaseTest - 📄 Response Body:
+io.restassured.internal.RestAssuredResponseImpl@23468512
+[INFO ] 2025-04-18 12:17:14.972 [main] BaseTest - ✅ Test Passed: getAllCategories_WithoutToken_ShouldReturn401

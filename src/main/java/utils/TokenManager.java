@@ -1,5 +1,6 @@
 package utils;
 
+import POJO.Token.TokenResponse;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -8,7 +9,7 @@ import java.io.ObjectInputFilter;
 
 import static io.restassured.RestAssured.given;
 
-public class TokenManager extends ConfigReader {
+public class TokenManager {
 
     //Generates + stores bearer token
 
@@ -23,20 +24,24 @@ public class TokenManager extends ConfigReader {
 
 
     public static String generateToken() {
-        RequestSpecification reqSpec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("baseurl"))
-                .addHeader("Content-Type", "application/json")
+        ConfigReader configReader = new ConfigReader();
+        RequestSpecification reqSpec = new RequestSpecBuilder().setBaseUri(configReader.getProperty("baseurl"))
                 .addHeader("Accept", "application/json")
-                .addHeader("Authorization", "Basic " + ConfigReader.getProperty("authorization"))
+                .addHeader("Authorization", configReader.getProperty("authorization"))
+                .addHeader("Content-Type", "")
                 .build();
 
-        Response response = given()
+        TokenResponse tokenResponse = given()
                 .spec(reqSpec)
                 .when()
-                    .post("/oauth2/token/client_credentials")
+                .post("/oauth2/token/client_credentials")
                 .then()
-                    .assertThat().statusCode(200)
-                    .extract().response();
+                .assertThat().statusCode(200)
+                .extract().response().as(TokenResponse.class);
 
-        return response.jsonPath().getString("access_token");
+        token = tokenResponse.data.access_token;
+        System.out.println("Bearer Token: " + token);
+
+        return "Bearer " + token;
     }
 }
