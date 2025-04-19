@@ -33,3 +33,6 @@ jobs:
 
       - name: Generate Allure Report
         run: mvn allure:report
+
+      - name: List Allure report files
+        run: ls -l target/site/allure-maven-plugin/
