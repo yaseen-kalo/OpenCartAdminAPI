@@ -3,7 +3,7 @@
 <suite name="OpenCartAdminAPI">
     <test verbose="2" preserve-order="true" name="/Users/yaseenkalo/Documents/automationProject/OpenCartAdminAPI">
         <classes>
-            <class name="tests.category.GetCategoryTests"/>
+            <class name="tests.category.CategoryTests"/>
         </classes>
     </test>
 </suite>

@@ -1,6 +1,7 @@
 package utils;
 
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.response.Response;
 import io.restassured.specification.ResponseSpecification;
 
 import static org.hamcrest.Matchers.containsString;
@@ -12,6 +13,7 @@ public class ResponseSpecFactory {
     private static ResponseSpecification successResponseSpec;
     private static ResponseSpecification unauthorizedSpec;
     private static ResponseSpecification notFoundSpec;
+    private static ResponseSpecification badRequestSpec;
 
     // ✅ 200 OK
     public static ResponseSpecification getSuccessSpec() {
@@ -30,7 +32,7 @@ public class ResponseSpecFactory {
             unauthorizedSpec = new ResponseSpecBuilder()
                     .expectStatusCode(401)
                     .expectContentType("application/json")
-                    .expectBody("error", containsString("Unauthorized")) // adjust if needed
+                    .expectBody("error[0]", containsString("Unauthorized")) // adjust if needed
                     .build();
         }
         return unauthorizedSpec;
@@ -45,5 +47,16 @@ public class ResponseSpecFactory {
                     .build();
         }
         return notFoundSpec;
+    }
+
+    public static ResponseSpecification getBadRequestSpec() {
+        if (badRequestSpec == null) {
+            badRequestSpec = new ResponseSpecBuilder()
+                    .expectStatusCode(400)
+                    .expectContentType("application/json")
+                    .expectBody("error[0]", containsString("Invalid request body, please validate the json object")) // adjust if needed
+                    .build();
+        }
+        return badRequestSpec;
     }
 }

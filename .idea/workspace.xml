@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d57ac8-ffc0-4f71-ab99-c9f5ab54e87e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/category/CategoryTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/executionLogs.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AuthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AuthManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ConfigReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/RequestSpecFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RequestSpecFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/ResponseSpecFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ResponseSpecFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/TokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/TokenManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/category/GetCategoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/category/GetCategoryTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/category/GetCategoryTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
