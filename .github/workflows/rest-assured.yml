@@ -36,3 +36,10 @@ jobs:
 
       - name: List Allure report files
         run: ls -l target/site/allure-maven-plugin/
+
+      - name: Upload Allure Report
+        if: always()  # ensures this runs even if tests fail
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: target/site/allure-maven-plugin/
