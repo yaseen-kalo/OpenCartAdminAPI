@@ -7,49 +7,7 @@
     <list default="true" id="d8d57ac8-ffc0-4f71-ab99-c9f5ab54e87e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/executionLogs.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/executionLogs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ResponseSpecFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ResponseSpecFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/Categories/CategoriesNegativeEndpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/endpoints/Categories/CategoriesNegativeEndpoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/Categories/CategoriesPositiveEndpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/endpoints/Categories/CategoriesPositiveEndpoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/Customer/CustomersNegativeEndpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/endpoints/Customer/CustomersNegativeEndpoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/Customer/CustomersPositiveEndpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/endpoints/Customer/CustomersPositiveEndpoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/auth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/coupon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/customfield.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/manufacturer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/payment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/returns.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/shipping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/store.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/user.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/voucher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/Custoemr/Post/PositiveRequest/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Customer/Post/PositiveRequest/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/Custoemr/Post/PositiveRequest/Affiliate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Customer/Post/PositiveRequest/Affiliate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/Custoemr/Post/PositiveRequest/CustomField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Customer/Post/PositiveRequest/CustomField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/Custoemr/Post/PositiveRequest/CustomerPostRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Customer/Post/PositiveRequest/CustomerPostRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/Custoemr/Post/PositiveResponse/CustomerPostResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Customer/Post/PositiveResponse/CustomerPostResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/Custoemr/Post/PositiveResponse/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Customer/Post/PositiveResponse/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/auth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/coupon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/customfield.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/manufacturer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/payment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/returns.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/shipping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/store.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/user.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/voucher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/auth/LoginTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/auth/TokenTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/category/CategoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/category/CategoryTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/customer/CustomerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/customer/CustomerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/manufacturer/ManufacturerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/manufacturer/ManufacturerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

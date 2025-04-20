@@ -2,7 +2,6 @@ package tests.manufacturer;
 
 import data.payloads.ManufacturerPayload.ManufacturerCreateRequest;
 import endpoints.Manufacturer.ManufacturerPositiveEndpoints;
-import endpoints.Manufacturer.ManufacturerNegativeEndpoints;
 
 import io.restassured.response.Response;
 import models.Manufacturer.Post.PositiveResponse;
