@@ -21,7 +21,7 @@ public class ResponseSpecFactory {
         if (successResponseSpec == null) {
             successResponseSpec = new ResponseSpecBuilder()
                     .expectStatusCode(200)
-                    .expectContentType("application/json")
+                    .expectContentType("application/json; charset=utf-8")
                     .build();
         }
         return successResponseSpec;

@@ -13,13 +13,13 @@ public class ManufacturerPositiveEndpoints {
         return given()
                 .spec(RequestSpecFactory.getRequestSpec())
                 .body(ManufacturerCreateRequest.ValidManufacturerRequestPayload())
-                .post("/manufacturer");
+                .post("/manufacturers");
     }
 
 
     public static Response shouldGetManufacturerSuccessfully(String name) {
         return given()
                 .spec(RequestSpecFactory.getRequestSpec())
-                .get("/manufacturer/" + name);
+                .get("/manufacturers/" + name);
     }
 }

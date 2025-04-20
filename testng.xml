@@ -5,6 +5,7 @@
         <classes>
             <class name="tests.category.CategoryTests"/>
             <class name="tests.customer.CustomerTests"/>
+            <class name="tests.manufacturer.ManufacturerTests"></class>
         </classes>
     </test>
 </suite>
