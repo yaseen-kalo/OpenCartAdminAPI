@@ -4,6 +4,7 @@
     <test verbose="2" preserve-order="true" name="/Users/yaseenkalo/Documents/automationProject/OpenCartAdminAPI">
         <classes>
             <class name="tests.category.CategoryTests"/>
+            <class name="tests.customer.CustomerTests"/>
         </classes>
     </test>
 </suite>

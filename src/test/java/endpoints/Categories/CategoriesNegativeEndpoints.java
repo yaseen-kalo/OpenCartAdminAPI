@@ -31,4 +31,16 @@ public class CategoriesNegativeEndpoints {
                 .post("/categories");
     }
 
+    public static Response shouldReturnUnauthorizeWhenTokenIsMissing(int id) {
+        return given()
+                .spec(RequestSpecFactory.getRequestSpecWithoutToken())
+                .body("{\n" +
+                        "  \"categories\": [\n" +
+                        "    \""+id+"\"\n" +
+                        "  ]\n" +
+                        "}")
+                .when()
+                .delete("/categories");
+    }
+
 }

@@ -24,4 +24,17 @@ public class CategoriesPositiveEndpoints {
                 .when()
                 .post("/categories");
     }
+
+    public static Response shouldDeleteCategorySuccessfully(int id) {
+
+        return given()
+                .spec(RequestSpecFactory.getRequestSpec())
+                .body("{\n" +
+                        "  \"categories\": [\n" +
+                        "    \""+id+"\"\n" +
+                        "  ]\n" +
+                        "}")
+                .when()
+                .delete("/categories");
+    }
 }

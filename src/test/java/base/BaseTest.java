@@ -4,6 +4,7 @@ import io.restassured.response.Response;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import utils.AuthManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 
 public class BaseTest {
 
-    @BeforeClass
+    @BeforeSuite
     public void setup() {
         AuthManager.loginUser();
     }

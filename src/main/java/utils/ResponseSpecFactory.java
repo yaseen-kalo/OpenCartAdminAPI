@@ -13,6 +13,7 @@ public class ResponseSpecFactory {
     private static ResponseSpecification successResponseSpec;
     private static ResponseSpecification unauthorizedSpec;
     private static ResponseSpecification notFoundSpec;
+    private static ResponseSpecification notFoundSpecCustomer;
     private static ResponseSpecification badRequestSpec;
 
     // ✅ 200 OK
@@ -47,6 +48,17 @@ public class ResponseSpecFactory {
                     .build();
         }
         return notFoundSpec;
+    }
+
+    public static ResponseSpecification getCustomerNotFoundSpec() {
+        if (notFoundSpecCustomer == null) {
+            notFoundSpecCustomer = new ResponseSpecBuilder()
+                    .expectStatusCode(404)
+                    .expectContentType("application/json")
+                    .expectBody("error[0]", containsString("Customer not found"))
+                    .build();
+        }
+        return notFoundSpecCustomer;
     }
 
     public static ResponseSpecification getBadRequestSpec() {

@@ -15,4 +15,11 @@ public class CustomersPositiveEndpoints {
                 .when()
                 .post("/customers");
     }
+
+    public static Response getCustomerById(int id) {
+        return given()
+                .spec(RequestSpecFactory.getRequestSpec())
+                .when()
+                .get("/customers/" + id);
+    }
 }
